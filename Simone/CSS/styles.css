@@ -20,14 +20,14 @@ a {
 ul li {
   padding-right: 15px;
 }
-.fa-twitter:hover{
-  color: rgb(40, 166, 239) ;
+.fa-twitter:hover {
+  color: rgb(40, 166, 239);
 }
-.fa-facebook-f:hover{
-  color: rgb(12, 62, 91) ;
+.fa-facebook-f:hover {
+  color: rgb(12, 62, 91);
 }
-.fa-dribbble:hover{
-  color: rgb(159, 19, 141) ;
+.fa-dribbble:hover {
+  color: rgb(159, 19, 141);
 }
 
 .wel {
@@ -59,4 +59,32 @@ ul li {
   line-height: 83px;
   font-weight: 600;
   color: white;
+}
+.about{
+  margin: 80px;
+}
+.back p {
+  font-size: 120px;
+  line-height: 54px;
+  font-weight: 600;
+  color: rgba(33, 37, 41, 0.06);
+  transform: translateX(51%);
+}
+.front p{
+  position: relative;
+  font-size: 36px;
+  line-height: 54px;
+  font-weight: 600;
+  color: rgb(33, 37, 41);
+}
+.front p::after {
+  content: "";
+  position: absolute;
+  width: 80px;
+  height: 3px;
+  background-color: rgb(32, 201, 151);
+  border-radius: 2px; 
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
 }
