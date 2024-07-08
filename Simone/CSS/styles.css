@@ -1,6 +1,10 @@
 * {
   font-family: Poppins, sans-serif;
 }
+nav {
+  position: fixed;
+  /* background-color: black; */
+}
 a {
   text-decoration: none;
   color: white;
@@ -42,7 +46,7 @@ ul li {
   line-height: 24px;
   font-weight: 350;
 }
-.btn-outline-success {
+.first button{
   border-color: rgb(32, 201, 151) !important;
   color: rgb(32, 201, 151) !important;
   border-radius: 30px;
@@ -60,7 +64,7 @@ ul li {
   font-weight: 600;
   color: white;
 }
-.about{
+.about {
   margin: 80px;
 }
 .back p {
@@ -70,12 +74,13 @@ ul li {
   color: rgba(33, 37, 41, 0.06);
   transform: translateX(51%);
 }
-.front p{
+.front p {
   position: relative;
   font-size: 36px;
   line-height: 54px;
   font-weight: 600;
   color: rgb(33, 37, 41);
+  margin-bottom: 100px;
 }
 .front p::after {
   content: "";
@@ -83,8 +88,72 @@ ul li {
   width: 80px;
   height: 3px;
   background-color: rgb(32, 201, 151);
-  border-radius: 2px; 
+  border-radius: 2px;
   top: 100%;
   left: 50%;
   transform: translateX(-50%);
 }
+.title {
+  font-size: 28px;
+  line-height: 36px;
+  font-weight: 600;
+}
+.title span {
+  color: rgb(32, 201, 151);
+}
+.content {
+  font-size: 17px;
+  line-height: 29px;
+  font-weight: 400;
+  color: rgba(76, 77, 77, 0.892);
+}
+.cv p {
+  font-size: 17px;
+  line-height: 29px;
+  font-weight: 400;
+  color: rgba(76, 77, 77, 0.892);
+}
+.cv span {
+  font-weight: 600;
+  color: rgb(76, 77, 77);
+}
+.cv button{
+  border-color: rgb(32, 201, 151) !important;
+  background-color: rgb(32, 201, 151) !important;
+  color: white !important;
+  border-radius: 30px;
+  width: 200px;
+  height: 50px;
+  font-weight: 550;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.404);
+  margin: 10px;
+}
+.cv hr{
+  color: rgba(0, 0, 0, 0.338);
+}
+.count{
+  font-size: 50px;
+  font-weight: 550;
+  color: rgba(76, 77, 77, 0.715);
+}
+.a{
+  font-size: 18px;
+  font-weight: 350;
+  color: rgba(22, 22, 22, 0.759);
+}
+.num {
+  position: relative;
+}
+
+.num::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 130%;
+  transform: translateX(-50%);
+  width: 1.5px;
+  height: 120px;
+  background-color: rgba(76, 77, 77, 0.105);
+  border-radius: 2px;
+}
+
