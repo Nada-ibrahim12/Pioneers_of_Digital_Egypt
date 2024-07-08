@@ -1,0 +1,62 @@
+* {
+  font-family: Poppins, sans-serif;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+.nav-link {
+  color: white !important;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+.nav-item .nav-link:hover {
+  color: rgb(32, 201, 151) !important;
+}
+.active {
+  color: rgb(32, 201, 151) !important;
+}
+ul li {
+  padding-right: 15px;
+}
+.fa-twitter:hover{
+  color: rgb(40, 166, 239) ;
+}
+.fa-facebook-f:hover{
+  color: rgb(12, 62, 91) ;
+}
+.fa-dribbble:hover{
+  color: rgb(159, 19, 141) ;
+}
+
+.wel {
+  color: white;
+  font-size: 30px;
+  line-height: 50px;
+  font-weight: 530;
+}
+.bas {
+  color: rgba(255, 255, 255, 0.774);
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 350;
+}
+.btn-outline-success {
+  border-color: rgb(32, 201, 151) !important;
+  color: rgb(32, 201, 151) !important;
+  border-radius: 30px;
+  width: 150px;
+  height: 50px;
+  font-weight: 500;
+}
+.btn-outline-success:hover {
+  background-color: rgb(32, 201, 151) !important;
+  color: white !important;
+}
+.animation {
+  font-size: 64px;
+  line-height: 83px;
+  font-weight: 600;
+  color: white;
+}

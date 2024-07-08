@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign UP</title>
+</head>
+
+<body>
+    <form>
+        <h1>Sign Up</h1>
+        <hr>
+
+        <label for="file">Upload Profile Picture:</label><br><br>
+        <input type="file" id="file" name="file"> <br><br>
+
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" placeholder="Name" required><br><br>
+
+        <label for="username">Username:</label><br>
+        <input type="text" id="username" name="username" placeholder="Username" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="Email" required><br><br>
+
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" placeholder="Password" required><br><br>
+
+        <label for="confirm_password">Confirm Password:</label><br>
+        <input type="password" id="confirm_password" name="confirm_password" placeholder="Confirm Password"
+            required><br><br>
+
+        <label for="age">Birth date:</label><br>
+        <input type="date" id="age" name="age" required><br><br>
+        <label>Gender:</label> &ThickSpace;
+        <label for="male">Male</label>
+        <input type="radio" id="male" name="gender" value="male"> &nbsp;
+        <label for="female">Female</label>
+        <input type="radio" id="female" name="gender" value="female"><br><br>
+
+        <label for="Country"> Country: </label>
+        <select name="Country:" id="Country:">
+            <option value="eg">Egypt</option>
+            <option value="am">Amarica</option>
+            <option value="it">Italy</option>
+            <option value="ger">Germany</option>
+            <option value="sp">Spania</option>
+        </select required> <br><br>
+
+        <label for="Language"> Language: </label>
+        <select name="Language:" id="Language:">
+            <option value="ar">Arabic</option>
+            <option value="eng">English</option>
+            <option value="it">Italian</option>
+            <option value="sp">Spanish</option>
+        </select required><br><br>
+
+        <label for="notes">Notes:</label><br>
+        <textarea id="notes" name="notes" cols="20" rows="5"></textarea><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simone</title>
+    <link rel="stylesheet" href="CSS/bootstrap.min.css" />
+    <link rel="stylesheet" href="CSS/all.min.css" />
+    <link rel="stylesheet" href="CSS/styles.css" />
+    <style>
+      .hero-bg {
+        background-image: url(img/x02.jpg);
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+      }
+      .abs {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background-color: rgba(0, 1, 4, 0.774);
+        z-index: 1;
+      }
+      .container-fluid {
+        position: relative;
+        z-index: 2;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="abs"></div>
+    <div class="hero-bg parallax">
+      <nav
+        class="row container-fluid navbar navbar-expand-lg navbar-light container-fluid pt-3 sticky-sm-top"
+      >
+        <div class="col-lg-2 col-md-2 col-sm-4 d-flex align-items-center">
+          <a href="#" class="navbar-brand">
+            <img src="img/x01.png" alt="Simone" />
+          </a>
+        </div>
+        <div
+          class="col-lg-8 col-md-8 collapse navbar-collapse"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">What I Do</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Resume</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Client</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-4 d-flex justify-content-end">
+          <button
+            class="navbar-toggler"
+            id="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span
+              ><i class="fa-solid fa-bars fa-lg" style="color: #ffffff"></i
+            ></span>
+          </button>
+          <a href="#" class="nav-link">
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+          <a href="#" class="nav-link">
+            <i class="fa-brands fa-facebook-f"></i
+          ></a>
+          <a href="#" class="nav-link">
+            <i class="fa-brands fa-dribbble"></i>
+          </a>
+        </div>
+      </nav>
+      <div class="container-fluid my-auto">
+        <div
+          class="row d-flex justify-content-center align-items-center flex-column"
+        >
+          <div class="first container text-center">
+            <p class="wel">Welcome</p>
+            <h1 class="animation">Simone</h1>
+            <p class="bas">based in Los Angeles, California.</p>
+            <button type="button" class="btn btn-outline-success">
+              Hire Me
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

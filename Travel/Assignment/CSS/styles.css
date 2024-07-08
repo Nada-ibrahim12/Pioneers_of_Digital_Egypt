@@ -1,0 +1,375 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+
+.first {
+  background-image: url(../img/x01.jpg);
+  background-position: center center;
+  background-size: cover;
+  height: 160vh;
+}
+
+.navbar {
+  background-color: rgba(79, 169, 185, 0.514);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  width: 100%;
+}
+
+.navbar .logo {
+  color: aliceblue;
+  font-size: 250%;
+  font-weight: 400;
+  margin-left: 10%;
+  /* font-family: 'Lobster', cursive; */
+  text-shadow: 5px 4px 5px rgb(6, 101, 120);
+  font-family: "Playfair Display";
+  text-decoration: none;
+}
+
+/* .navbar .logo span {
+    color: rgb(63, 195, 222);
+    font-family: 'Lobster', cursive;
+} */
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  margin-right: 5%;
+}
+
+.navbar ul li {
+  margin-right: 30px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: aliceblue;
+  font-size: 100%;
+  font-family: "Playfair Display", serif;
+}
+
+.head {
+  text-align: center;
+  transform: translateY(140%);
+  font-size: 400%;
+  color: aliceblue;
+  letter-spacing: 0.1em;
+  word-spacing: 0.1em;
+}
+
+h1 span {
+  font-size: 100%;
+  color: rgb(63, 195, 222);
+}
+
+.quo {
+  text-align: center;
+  transform: translateY(900%);
+  font-size: 120%;
+  color: aliceblue;
+  margin: 1%;
+  margin-bottom: 0%;
+  letter-spacing: 0.1em;
+  word-spacing: 0.2em;
+}
+
+.form1 {
+  margin: 0%;
+  transform: translateY(30%);
+  margin-left: 11%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.register {
+  width: 80%;
+  text-align: center;
+  padding: 2%;
+  background-color: rgba(240, 248, 255, 0.778);
+  transform: translateY(120%);
+  box-shadow: -2px 0px 28px 5px rgba(0, 0, 0, 0.75);
+}
+
+p.reg_head {
+  /* padding: 2%; */
+  padding-bottom: 0;
+  /* color: rgb(30, 98, 112); */
+  color: rgb(44, 25, 10);
+  font-size: 180%;
+  font-weight: 700;
+  display: block;
+}
+
+.form1 select,
+.form1 input {
+  width: 22%;
+  height: 40px;
+  margin: 1%;
+  transform: translateY(70%);
+  border-radius: 8px;
+}
+
+.form1 select {
+  margin-bottom: 5%;
+}
+
+[placeholder="destination"],
+[placeholder^="Check"],
+[name="room"],
+[name="adult"],
+[name="child"],
+[name="rtype"] {
+  padding-left: 1%;
+  font-family: "Courier New", Courier, monospace;
+  background-color: rgba(240, 248, 255, 0.697);
+  border: 1px double rgb(6, 80, 95);
+}
+
+form label {
+  font-family: "Courier New", Courier, monospace;
+  color: rgba(6, 80, 95, 0.855);
+  font-weight: 300;
+}
+.btn {
+  background-color: rgb(44, 25, 10);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  margin: 1%;
+}
+.title {
+  color: rgb(44, 25, 10);
+  font-size: 250%;
+  text-align: center;
+  padding: 1%;
+  text-decoration: wavy;
+  margin-bottom: 0%;
+}
+.line-container {
+  text-align: center;
+  line-height: 0.5;
+}
+.line-container .line {
+  display: block;
+}
+.line-container .short-line {
+  width: 80px;
+  margin: 10px auto;
+  margin-top: 0%;
+  border-bottom: 2.3px solid black;
+}
+.line-container .long-line {
+  width: 140px;
+  margin: 10px auto;
+  border-bottom: 2.3px solid black;
+}
+.ab-all {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  margin: 1% 9% 0% 9%;
+}
+.ab {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  margin-top: 1.5%;
+  max-width: 800px;
+}
+
+.a {
+  color: rgb(44, 25, 10);
+  font-size: 220%;
+}
+.details {
+  color: rgb(44, 25, 10);
+  max-width: 60%;
+  margin-top: 1.5%;
+}
+.scroll-container {
+  display: flex;
+  overflow-x: auto;
+  height: 300px;
+  max-width: 530px;
+  margin-top: 1%;
+}
+.scroll-content {
+  display: flex;
+  flex-direction: row;
+}
+.scroll-content img {
+  width: 530px;
+  max-height: 100%;
+  margin-right: 10px;
+  object-fit: cover;
+}
+.explore {
+  background-image: linear-gradient(
+    to bottom,
+    rgb(119, 199, 214),
+    rgb(229, 232, 232)
+  );
+  padding-bottom: 1%;
+}
+.vid video {
+  max-width: 530px;
+  max-height: 300px;
+}
+
+.menu {
+  width: 95%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: -8%;
+  margin-left: 5%;
+  gap: 30px;
+}
+
+.cards {
+  background-color: white;
+  border: 1px solid #ddd;
+  max-width: 30%;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.cards .img {
+  max-width: 90%;
+  height: auto;
+  margin: 12px;
+  margin-left: 20px;
+}
+
+.desc {
+  color: rgb(6, 80, 95);
+  font-weight: bold;
+  font-size: 1.3rem;
+  margin: 10px 0px 0px 20px;
+  text-align: left;
+}
+
+.details {
+  font-weight: 250;
+  font-size: 1.1rem;
+  text-align: left;
+  width: 650px;
+  margin: 0 0px 20px;
+}
+.odesc {
+  color: rgb(51, 51, 51);
+  font-weight: bold;
+  font-size: 1.4rem;
+  margin: 10px 0px 0px 20px;
+  text-align: left;
+}
+.odesc p {
+  margin-bottom: 1%;
+}
+.ratings {
+  color: rgb(2, 250, 238);
+  font-size: 2rem;
+  /* border-radius: 20px; */
+}
+.book {
+  background-color: rgb(51, 51, 51);
+  color: white;
+  border-radius: 7px;
+  width: 130px;
+  margin: 4%;
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+.offers {
+  margin-top: 2%;
+  background-image: linear-gradient(
+    to bottom,
+    rgb(119, 199, 214),
+    rgb(229, 232, 232)
+  );
+  padding-bottom: 3%;
+}
+.offers .img {
+  max-width: 100%;
+  margin: 0px;
+  margin-left: 0px;
+}
+.contact {
+  display: flex;
+  flex-direction: column;
+}
+.form2 {
+  display: flex;
+  justify-content: center;
+}
+.f {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  /* border: 1px double rgb(51, 51, 51); */
+  padding: 20px;
+  margin: 2%;
+}
+.form2 input {
+  width: 48%;
+  height: 50px;
+  border-radius: 3px;
+}
+
+[placeholder="Name"],
+[placeholder^="E"],
+[placeholder^="S"],
+[placeholder^="M"] {
+  padding: 1%;
+  font-family: "Courier New", Courier, monospace;
+  border: 0.5px double rgb(51, 51, 51);
+}
+
+.contact .btn {
+  background-color: rgb(51, 51, 51);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+input[placeholder^="S"] {
+  width: 100%;
+}
+textarea {
+  width: 100%;
+  min-height: 80px;
+}
+.footer {
+  height: 10vh;
+  background-color: rgb(51, 51, 51);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.footer a {
+  color: rgb(2, 250, 238);
+  text-decoration: none;
+  padding: 0%;
+}
