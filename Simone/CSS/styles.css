@@ -52,7 +52,7 @@ ul li {
   height: 50px;
   font-weight: 500;
 }
-.btn-outline-success:hover {
+.first button:hover {
   background-color: rgb(32, 201, 151) !important;
   color: white !important;
 }
@@ -69,23 +69,20 @@ ul li {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -43%);
   z-index: 0;
 }
-
 .back p {
   font-size: 120px;
-  line-height: 54px;
+  line-height: 70px;
   font-weight: 600;
   color: rgba(33, 37, 41, 0.06);
   text-align: center;
 }
-
 .front {
   position: relative;
   z-index: 1;
 }
-
 .front p {
   font-size: 36px;
   line-height: 54px;
@@ -94,11 +91,9 @@ ul li {
   margin-bottom: 100px;
   text-align: center;
 }
-
 .text-center {
   position: relative;
 }
-
 .front p::after {
   content: "";
   position: absolute;
@@ -161,7 +156,6 @@ ul li {
 .num {
   position: relative;
 }
-
 .num::before {
   content: "";
   position: absolute;
@@ -172,4 +166,101 @@ ul li {
   height: 120px;
   background-color: rgba(76, 77, 77, 0.105);
   border-radius: 2px;
+}
+.service {
+  padding: 80px 50px;
+  background-color: rgb(248, 249, 250);
+  width: 100%;
+}
+.icon-container i {
+  color: rgb(32, 201, 151);
+  font-size: 40px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  border: 1px solid white;
+  border-radius: 10px;
+  margin: 0px 20px;
+  box-shadow: 3px 3px 10px rgba(116, 117, 118, 0.342);
+}
+.service .a,
+.summary .a {
+  color: rgb(37, 43, 51);
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  font-weight: 530;
+  line-height: 24px;
+}
+.service .b,
+.summary .b,
+.uni {
+  color: rgb(76, 77, 77);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 29px;
+}
+.summary {
+  margin: 90px 60px;
+}
+
+.ed div,
+.exp div {
+  margin: 0px 40px;
+  padding-left: 15px;
+}
+.categ {
+  color: rgb(41, 42, 42);
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 29px;
+}
+.sq {
+  border: 1px solid rgb(198, 199, 200);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+}
+.sq div {
+  margin: 5px;
+  max-width: 90%;
+}
+.sq .date {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 100px;
+  height: 30px;
+  border-radius: 10px;
+  background: rgb(32, 201, 151);
+  color: white;
+}
+.progress {
+  height: 8px;
+}
+.progress-bar {
+  background-color: rgb(32, 201, 151);
+}
+.summary .sk {
+  margin: 40px;
+}
+.sk .a {
+  font-size: 1rem;
+}
+.sk button {
+  margin: 40px;
+  border: 1px solid #6c757d;
+  border-radius: 30px;
+  color: #6c757d;
+  width: 200px;
+  height: 50px;
+  font-weight: 550;
+  transition: 0.5s 0.3s;
+}
+.sk .btn:hover {
+  border: 1px solid #6c757d;
+  background-color: #6c757d;
+  color: white;
 }
