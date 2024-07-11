@@ -2,8 +2,7 @@
   font-family: Poppins, sans-serif;
 }
 nav {
-  position: fixed;
-  /* background-color: black; */
+  position: static;
 }
 a {
   text-decoration: none;
@@ -33,7 +32,6 @@ ul li {
 .fa-dribbble:hover {
   color: rgb(159, 19, 141);
 }
-
 .wel {
   color: white;
   font-size: 30px;
@@ -46,7 +44,7 @@ ul li {
   line-height: 24px;
   font-weight: 350;
 }
-.first button{
+.first button {
   border-color: rgb(32, 201, 151) !important;
   color: rgb(32, 201, 151) !important;
   border-radius: 30px;
@@ -67,21 +65,40 @@ ul li {
 .about {
   margin: 80px;
 }
+.back {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+}
+
 .back p {
   font-size: 120px;
   line-height: 54px;
   font-weight: 600;
   color: rgba(33, 37, 41, 0.06);
-  transform: translateX(51%);
+  text-align: center;
 }
-.front p {
+
+.front {
   position: relative;
+  z-index: 1;
+}
+
+.front p {
   font-size: 36px;
   line-height: 54px;
   font-weight: 600;
   color: rgb(33, 37, 41);
   margin-bottom: 100px;
+  text-align: center;
 }
+
+.text-center {
+  position: relative;
+}
+
 .front p::after {
   content: "";
   position: absolute;
@@ -117,7 +134,7 @@ ul li {
   font-weight: 600;
   color: rgb(76, 77, 77);
 }
-.cv button{
+.cv button {
   border-color: rgb(32, 201, 151) !important;
   background-color: rgb(32, 201, 151) !important;
   color: white !important;
@@ -128,15 +145,15 @@ ul li {
   box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.404);
   margin: 10px;
 }
-.cv hr{
+.cv hr {
   color: rgba(0, 0, 0, 0.338);
 }
-.count{
+.count {
   font-size: 50px;
   font-weight: 550;
   color: rgba(76, 77, 77, 0.715);
 }
-.a{
+.a {
   font-size: 18px;
   font-weight: 350;
   color: rgba(22, 22, 22, 0.759);
@@ -149,11 +166,10 @@ ul li {
   content: "";
   position: absolute;
   top: 0;
-  left: 130%;
+  left: 100%;
   transform: translateX(-50%);
   width: 1.5px;
   height: 120px;
   background-color: rgba(76, 77, 77, 0.105);
   border-radius: 2px;
 }
-
