@@ -32,6 +32,12 @@ ul li {
 .fa-dribbble:hover {
   color: rgb(159, 19, 141);
 }
+.fa-google:hover {
+  color: rgb(208, 17, 17);
+}
+.fa-github:hover {
+  color: rgb(31, 30, 30);
+}
 .wel {
   color: white;
   font-size: 30px;
@@ -110,7 +116,7 @@ ul li {
   line-height: 36px;
   font-weight: 600;
 }
-.title span{
+.title span {
   color: rgb(32, 201, 151);
 }
 .content {
@@ -129,7 +135,8 @@ ul li {
   font-weight: 600;
   color: rgb(76, 77, 77);
 }
-.cv button {
+.cv button,
+.contact button {
   border-color: rgb(32, 201, 151) !important;
   background-color: rgb(32, 201, 151) !important;
   color: white !important;
