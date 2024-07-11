@@ -110,7 +110,7 @@ ul li {
   line-height: 36px;
   font-weight: 600;
 }
-.title span {
+.title span, i {
   color: rgb(32, 201, 151);
 }
 .content {
@@ -263,4 +263,7 @@ ul li {
   border: 1px solid #6c757d;
   background-color: #6c757d;
   color: white;
+}
+.follow i{
+  color: #6c757d;
 }
