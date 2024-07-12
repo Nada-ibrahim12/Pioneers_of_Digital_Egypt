@@ -44,7 +44,6 @@ ul li {
   line-height: 50px;
   font-weight: 530;
 }
-
 .animation {
   font-size: 64px;
   line-height: 83px;
@@ -56,9 +55,8 @@ ul li {
   content: "";
   left: 0;
   top: 0;
-  animation: anima 10s infinite;
+  animation: anima 15s infinite;
 }
-
 @keyframes anima {
   0% {
     content: "";
