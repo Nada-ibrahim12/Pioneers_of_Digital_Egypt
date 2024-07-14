@@ -733,3 +733,24 @@ ul li {
 .con i {
   color: rgb(32, 201, 151);
 }
+[placeholder="Name"],
+[placeholder="Email"],
+[placeholder^="Tell"] {
+  padding: 2%;
+  font-family: "Courier New", Courier, monospace;
+  border: 1px double rgba(118, 122, 122, 0.586);
+  color: rgba(118, 122, 122, 0.586);
+}
+input {
+  height: 50px;
+  border-radius: 5px;
+}
+textarea {
+  width: 100%;
+  min-height: 150px;
+  border-radius: 5px;
+}
+footer a{
+  color: black !important;
+}
+
