@@ -534,7 +534,7 @@ ul li {
 .back p {
   font-size: 120px;
   line-height: 70px;
-  font-weight: 600;
+  font-weight: 550;
   color: rgba(33, 37, 41, 0.06);
   text-align: center;
 }
@@ -663,7 +663,7 @@ ul li {
   line-height: 29px;
 }
 .summary {
-  margin: 90px 60px;
+  margin: 90px 40px;
 }
 
 .ed div,
@@ -750,7 +750,40 @@ textarea {
   min-height: 150px;
   border-radius: 5px;
 }
-footer a{
+footer a {
   color: black !important;
 }
-
+/* .portfolio {
+  background-color: rgb(248, 249, 250);
+} */
+.portfolio-img {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.portfolio-img img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.smallrec img {
+  height: 200px;
+  object-fit: cover;
+}
+.largerec img {
+  height: 400px;
+  object-fit: cover;
+}
+.portfolio .row .sq {
+  background-color: rgb(248, 249, 250);
+  border: none;
+}
+.portfolio .row .sq img {
+  border-radius: 100%;
+  padding: 0;
+  margin: 0;
+}
+.portfolio .row .sq i {
+  color: #ffc107;
+}
