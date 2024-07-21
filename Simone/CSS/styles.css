@@ -1,8 +1,12 @@
 * {
   font-family: Poppins, sans-serif;
 }
-nav {
-  position: static;
+.fixed-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999; /* Ensure it stays on top of other content */
 }
 a {
   text-decoration: none;
@@ -753,37 +757,75 @@ textarea {
 footer a {
   color: black !important;
 }
-/* .portfolio {
+.client .row .sq {
   background-color: rgb(248, 249, 250);
-} */
+  border: none;
+}
+.client .row .sq img {
+  border-radius: 100%;
+  padding: 0;
+  margin: 0;
+}
+.client .row .sq i {
+  color: #ffc107;
+}
+.portfolio {
+  background-color: rgb(248, 249, 250);
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+#portfolio-grid {
+  margin: 50px;
+  margin-bottom: 0px;
+}
 .portfolio-img {
   position: relative;
   overflow: hidden;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 7px;
 }
 .portfolio-img img {
   width: 100%;
   height: auto;
   display: block;
+  transition: transform 0.5s ease, filter 0.5s ease;
 }
-.smallrec img {
-  height: 200px;
-  object-fit: cover;
+.portfolio-img::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.85);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  z-index: 1;
 }
-.largerec img {
-  height: 400px;
-  object-fit: cover;
+.portfolio-img img:hover {
+  transform: scale(1.05);
+  filter: blur(5px);
 }
-.portfolio .row .sq {
-  background-color: rgb(248, 249, 250);
-  border: none;
+.portfolio-img:hover::after {
+  opacity: 1;
 }
-.portfolio .row .sq img {
-  border-radius: 100%;
-  padding: 0;
-  margin: 0;
+.portfolio-img .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  color: white;
+  text-align: center;
+  z-index: 2;
 }
-.portfolio .row .sq i {
-  color: #ffc107;
+.portfolio-img:hover .overlay {
+  opacity: 1;
+}
+.portfolio-img .overlay .text {
+  font-size: 1.2rem;
 }

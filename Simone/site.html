@@ -24,7 +24,7 @@
         background-color: rgba(0, 1, 4, 0.774);
         z-index: 1;
       }
-      .container-fluid {
+      .hero-bg .container-fluid {
         position: relative;
         z-index: 2;
       }
@@ -34,7 +34,7 @@
     <div class="abs"></div>
     <div class="hero-bg parallax">
       <nav
-        class="row container-fluid navbar navbar-expand-lg navbar-light container-fluid pt-3 sticky-sm-top"
+        class="row container-fluid navbar navbar-expand-lg navbar-light container-fluid pt-3 fixed-navbar"
       >
         <div class="col-lg-2 col-md-2 col-sm-4 d-flex align-items-center">
           <a href="#" class="navbar-brand">
@@ -451,7 +451,7 @@
         </div>
       </div>
     </div>
-    <div class="about portfolio">
+    <div class="portfolio">
       <div class="text-center">
         <div class="back">
           <p>PORTFOLIO</p>
@@ -461,47 +461,117 @@
         </div>
       </div>
       <div class="container-fluid">
-        <div class="row">
-          <div class="col-lg-4 mb-4">
-            <div class="portfolio-img smallrec">
-              <img src="img/x03.jpg" alt="Small Rectangle Image" />
+        <div class="row" id="portfolio-grid">
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-4 grid-item">
+            <div class="portfolio-img">
+              <img
+                src="img/x03.jpg"
+                alt="Small Rectangle Image"
+                class="img-fluid"
+              />
+              <div class="overlay">
+                <div class="text">
+                  <h3>Project Title 1</h3>
+                  <p>Category</p>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="col-lg-4 mb-4">
-            <div class="portfolio-img largerec">
-              <img src="img/x04.jpg" alt="Large Rectangle Image" />
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-4 grid-item">
+            <div class="portfolio-img">
+              <img
+                src="img/x04.jpg"
+                alt="Large Rectangle Image"
+                class="img-fluid"
+              />
+              <div class="overlay">
+                <div class="text">
+                  <h3>Project Title 2</h3>
+                  <p>Category</p>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="col-lg-4 mb-4">
-            <div class="portfolio-img smallrec">
-              <img src="img/x05.jpg" alt="Small Rectangle Image" />
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-4 grid-item">
+            <div class="portfolio-img">
+              <img
+                src="img/x05.jpg"
+                alt="Small Rectangle Image"
+                class="img-fluid"
+              />
+              <div class="overlay">
+                <div class="text">
+                  <h3>Project Title 3</h3>
+                  <p>Category</p>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="col-lg-4 mb-4">
-            <div class="portfolio-img largerec">
-              <img src="img/x06.jpg" alt="Large Rectangle Image" />
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-4 grid-item">
+            <div class="portfolio-img">
+              <img
+                src="img/x06.jpg"
+                alt="Large Rectangle Image"
+                class="img-fluid"
+              />
+              <div class="overlay">
+                <div class="text">
+                  <h3>Project Title 4</h3>
+                  <p>Category</p>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="col-lg-4 mb-4">
-            <div class="portfolio-img smallrec">
-              <img src="img/x07.jpg" alt="Small Rectangle Image" />
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-4 grid-item">
+            <div class="portfolio-img">
+              <img
+                src="img/x07.jpg"
+                alt="Small Rectangle Image"
+                class="img-fluid"
+              />
+              <div class="overlay">
+                <div class="text">
+                  <h3>Project Title 5</h3>
+                  <p>Category</p>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="col-lg-4 mb-4">
-            <div class="portfolio-img largerec">
-              <img src="img/x08.jpg" alt="Large Rectangle Image" />
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-4 grid-item">
+            <div class="portfolio-img">
+              <img
+                src="img/x08.jpg"
+                alt="Large Rectangle Image"
+                class="img-fluid"
+              />
+              <div class="overlay">
+                <div class="text">
+                  <h3>Project Title 6</h3>
+                  <p>Category</p>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="col-lg-4 mb-4">
-            <div class="portfolio-img largerec">
-              <img src="img/x09.jpg" alt="Large Rectangle Image" />
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-4 grid-item">
+            <div class="portfolio-img">
+              <img
+                src="img/x09.jpg"
+                alt="Large Rectangle Image"
+                class="img-fluid"
+              />
+              <div class="overlay">
+                <div class="text">
+                  <h3>Project Title 7</h3>
+                  <p>Category</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="about portfolio">
+    <div class="about client">
       <div class="text-center">
         <div class="back">
           <p>TESTIMONIAL</p>
@@ -681,8 +751,19 @@
         </div>
       </footer>
     </div>
+    <script src="https://unpkg.com/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var elem = document.querySelector("#portfolio-grid");
+        var msnry = new Masonry(elem, {
+          itemSelector: ".grid-item",
+          columnWidth: ".grid-item",
+          percentPosition: true,
+        });
+      });
+    </script>
   </body>
 </html>
