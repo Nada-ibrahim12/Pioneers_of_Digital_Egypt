@@ -8,6 +8,23 @@
   width: 100%;
   z-index: 9999;
 }
+@media (max-width: 991.98px) {
+  .navbar-expand-lg.navbar-dark .navbar-collapse {
+    background: rgba(0, 0, 0, 0.95);
+  }
+}
+@media (max-width: 991.98px) {
+  .navbar-expand-lg .navbar-collapse {
+    background: #fff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    left: 0;
+    margin-top: 0;
+    position: absolute;
+    right: 0;
+    top: 99%;
+    z-index: 1000;
+  }
+}
 a {
   text-decoration: none;
   color: white;
