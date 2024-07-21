@@ -755,7 +755,13 @@ textarea {
   border-radius: 5px;
 }
 footer a {
-  color: black !important;
+  color: black ;
+}
+.footer a:hover, footer span {
+  color: rgb(32, 201, 151);
+}
+footer .row{
+  padding: 50px 0 40px 0;
 }
 .client .row .sq {
   background-color: rgb(248, 249, 250);
