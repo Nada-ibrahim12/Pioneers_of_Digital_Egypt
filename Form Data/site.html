@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Form</title>
+    <link rel="stylesheet" href="CSS/bootstrap.min.css" />
+    <link rel="stylesheet" href="CSS/all.min.css" />
+    <link rel="stylesheet" href="CSS/styles.css" />
+  </head>
+  <body>
+    <div class="formContainer py-5">
+      <div class="container">
+        <h1 class="text-center py-4">Book Data</h1>
+        <div class="content">
+          <label for="BookNa">Book Name: </label>
+          <input class="form-control mb-3" type="text" id="BookNa" />
+          <label for="BookPr">Book Price: </label>
+          <input class="form-control mb-3" type="text" id="BookPr" />
+          <label for="BookCat">Book Category: </label>
+          <input class="form-control mb-3" type="text" id="BookCat" />
+          <label for="BookDesc">Book Description: </label>
+          <input class="form-control mb-3" type="text" id="BookDesc" />
+          <button class="btn btn-light">Add book</button>
+        </div>
+        <div class="tableData py-5">
+          <table class="table table-striped text-center">
+            <thead>
+              <th>ID</th>
+              <th>Book Name</th>
+              <th>Book Price</th>
+              <th>Book Category</th>
+              <th>Book Description</th>
+              <th>Actions</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td>0</td>
+                <td>hii</td>
+                <td>hii</td>
+                <td>hii</td>
+                <td>hii</td>
+                <td>
+                  <button class="btn btn-danger">Delete</button>
+                  <button class="btn btn-secondary">Update</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
