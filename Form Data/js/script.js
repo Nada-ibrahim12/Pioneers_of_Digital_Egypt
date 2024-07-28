@@ -44,7 +44,7 @@ function displayBooks(arrayContainer) {
                 <td>${bookCont[i].description}</td>
                 <td>
                   <button class="btn btn-danger" onclick="deleteBook(${i})">Delete</button>
-                  <button class="btn btn-secondary">Update</button>
+                  <button class="btn btn-secondary" onclick="getBook(${i})">Update</button>
                 </td>
               </tr>`
     }
@@ -56,4 +56,11 @@ function deleteBook(index) {
     bookCont.splice(index, 1)
     localStorage.setItem("allBooks", JSON.stringify(bookCont))
     displayBooks(bookCont)
+}
+
+function getBook(index) {
+    BookNa.value = bookCont[index].name
+    BookPr.value = bookCont[index].price
+    BookCat.value = bookCont[index].category
+    BookDesc.value = bookCont[index].description
 }
