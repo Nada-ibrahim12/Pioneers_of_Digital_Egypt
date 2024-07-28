@@ -3,26 +3,34 @@ var BookPr = document.getElementById("BookPr")
 var BookCat = document.getElementById("BookCat")
 var BookDesc = document.getElementById("BookDesc")
 var tableBody = document.getElementById("tableBody")
-// var BookNa = document.getElementById("BookNa")
+var AddandUpdateBtn = document.getElementById("AddandUpdateBtn")
+var currentindex
 
 var bookCont = []
 if (localStorage.getItem("allBooks") != null) {
     bookCont = JSON.parse(localStorage.getItem("allBooks"))
     displayBooks(bookCont)
 }
+// action on book
+function action() {
+    if (AddandUpdateBtn.innerHTML == "Add Book") {
 
-// add book function
-function addBook() {
-    var book = {
-        name: BookNa.value,
-        price: BookPr.value,
-        category: BookCat.value,
-        description: BookDesc.value
-    }
-    bookCont.push(book)
-    localStorage.setItem("allBooks", JSON.stringify(bookCont))
-    displayBooks(bookCont)
-    clearInputs()
+        // add book function
+        function addBook() {
+            var book = {
+                name: BookNa.value,
+                price: BookPr.value,
+                category: BookCat.value,
+                description: BookDesc.value
+            }
+            bookCont.push(book)
+            localStorage.setItem("allBooks", JSON.stringify(bookCont))
+            displayBooks(bookCont)
+            clearInputs()
+        }
+    } else {
+        updateBook();
+    }   
 }
 
 function clearInputs() {
@@ -59,8 +67,24 @@ function deleteBook(index) {
 }
 
 function getBook(index) {
+    currentindex = index
     BookNa.value = bookCont[index].name
     BookPr.value = bookCont[index].price
     BookCat.value = bookCont[index].category
     BookDesc.value = bookCont[index].description
+    AddandUpdateBtn.innerHTML = "Update Book"
+}
+
+// update book function
+function updateBook(index) {
+    var book = {
+        name: BookNa.value,
+        price: BookPr.value,
+        category: BookCat.value,
+        description: BookDesc.value
+    }
+    bookCont[currentindex] = book
+    localStorage.setItem("allBooks", JSON.stringify(bookCont))
+    displayBooks(bookCont)
+    clearInputs()
 }
