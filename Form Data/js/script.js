@@ -86,3 +86,16 @@ function updateBook() {
     clearInputs();
     AddandUpdateBtn.textContent = "Add book";
 }
+
+function search(word) {
+    var filter = [];
+    for (var i = 0; i < bookCont.length; i++) {
+        if (bookCont[i].name.toUpperCase().includes(word.toUpperCase()) ||
+            bookCont[i].description.toUpperCase().includes(word.toUpperCase()) ||
+            bookCont[i].category.toUpperCase().includes(word.toUpperCase()) ||
+            bookCont[i].price.includes(word)) {
+            filter.push(bookCont[i]);
+        }
+    }
+    displayBooks(filter);
+}
