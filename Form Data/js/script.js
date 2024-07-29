@@ -12,11 +12,17 @@ if (localStorage.getItem("allBooks") != null) {
     displayBooks(bookCont);
 }
 
+AddandUpdateBtn.addEventListener("click", action);
+
 function action() {
     if (AddandUpdateBtn.textContent === "Add book") {
-        addBook();
+        if (regx()) {
+            addBook();
+        }
     } else {
-        updateBook();
+        if (regx()) {
+            updateBook();
+        }
     }
 }
 
@@ -98,4 +104,53 @@ function search(word) {
         }
     }
     displayBooks(filter);
+}
+
+function regx() {
+    var nameRegex = /^[a-zA-Z\s]{3,30}$/;
+    var priceRegex = /^\d{1,4}$/;
+    var categoryRegex = /^[a-zA-Z\s]{3,20}$/;
+    var descriptionRegex = /^.{5,100}$/;
+
+    if (!nameRegex.test(BookNa.value)) {
+        BookNa.classList.remove("is-valid");
+        BookNa.classList.add("is-invalid");
+        // alert("Invalid book name. It should be 3-30 characters long, containing only letters and spaces.");
+        return false;
+    } else {
+        BookNa.classList.remove("is-invalid");
+        BookNa.classList.add("is-valid");
+    }
+
+    if (!priceRegex.test(BookPr.value)) {
+        BookPr.classList.remove("is-valid");
+        BookPr.classList.add("is-invalid");
+        // alert("Invalid book price. It should be a valid number with up to 4 digits.");
+        return false;
+    } else {
+        BookPr.classList.remove("is-invalid");
+        BookPr.classList.add("is-valid");
+    }
+
+    if (!categoryRegex.test(BookCat.value)) {
+        BookCat.classList.remove("is-valid");
+        BookCat.classList.add("is-invalid");
+        // alert("Invalid book category. It should be 3-20 characters long, containing only letters and spaces.");
+        return false;
+    } else {
+        BookCat.classList.remove("is-invalid");
+        BookCat.classList.add("is-valid");
+    }
+
+    if (!descriptionRegex.test(BookDesc.value)) {
+        BookDesc.classList.remove("is-valid");
+        BookDesc.classList.add("is-invalid");
+        // alert("Invalid book description. It should be 5-100 characters long.");
+        return false;
+    } else {
+        BookDesc.classList.remove("is-invalid");
+        BookDesc.classList.add("is-valid");
+    }
+
+    return true;
 }

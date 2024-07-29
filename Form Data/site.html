@@ -15,13 +15,13 @@
         <h1 class="text-center py-4">Book Data</h1>
         <div class="content">
           <label for="BookNa">Book Name: </label>
-          <input class="form-control mb-3" type="text" id="BookNa" />
+          <input class="form-control mb-3 is-valid" type="text" id="BookNa" oninput="regx(this.value);" />
           <label for="BookPr">Book Price: </label>
-          <input class="form-control mb-3" type="number" id="BookPr" />
+          <input class="form-control mb-3 is-valid" type="number" id="BookPr" oninput="regx(this.value);"/>
           <label for="BookCat">Book Category: </label>
-          <input class="form-control mb-3" type="text" id="BookCat" />
+          <input class="form-control mb-3 is-valid" type="text" id="BookCat" oninput="regx(this.value);" />
           <label for="BookDesc">Book Description: </label>
-          <input class="form-control mb-3" type="text" id="BookDesc" />
+          <input class="form-control mb-3 is-valid" type="text" id="BookDesc" oninput="regx(this.value);" />
           <div class="d-flex justify-content-center gap-4 mt-5">
             <button
               class="btn btn-light"
@@ -45,7 +45,7 @@
           />
         </div>
         <div class="tableData py-5">
-          <table class="table table-striped text-center">
+          <table class="table table-striped text-center ">
             <thead>
               <tr>
                 <th>ID</th>
