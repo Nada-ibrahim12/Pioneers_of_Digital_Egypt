@@ -31,7 +31,7 @@ nav {
   display: flex;
 }
 
-.nav{
+.nav {
   gap: 15px;
 }
 
@@ -187,7 +187,7 @@ img {
   width: 95%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; 
+  justify-content: center;
   align-items: center;
   margin-top: 2%;
   /* margin-left: 5%; */
