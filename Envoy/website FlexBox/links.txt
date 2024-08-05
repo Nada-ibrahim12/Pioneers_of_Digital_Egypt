@@ -1,1 +1,0 @@
-https://harnishdesign.net/demo/react/simone/demo/?classicHeader=true&darkTheme=false&bgImage=true
