@@ -1,3 +1,36 @@
 * {
-    background: #a773d7;
+  background: #280749;
+  color: whitesmoke;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+h1 {
+  font-weight: 800;
+  text-decoration: underline 2px;
+}
+label {
+  font-size: 20px;
+  font-weight: 500;
+}
+.delete {
+  background: rgb(18, 1, 33);
+  color: whitesmoke;
+}
+#AddandUpdateBtn {
+  background: rgb(213, 203, 234);
+  border-color: rgb(184, 138, 225);
+  width: 120px;
+}
+.reset {
+  background: rgb(38, 37, 40);
+  border-color: rgb(22, 21, 23);
+  color: whitesmoke;
+  width: 120px;
+}
+.update {
+  background: rgb(213, 203, 234);
+  border-color: rgb(184, 138, 225);
+}
+#AddandUpdateBtn:hover,
+.update:hover {
+  background: rgb(184, 138, 225);
 }

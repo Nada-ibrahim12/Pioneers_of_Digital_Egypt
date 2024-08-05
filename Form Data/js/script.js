@@ -56,8 +56,8 @@ function displayBooks(arrayContainer) {
                 <td>${arrayContainer[i].category}</td>
                 <td>${arrayContainer[i].description}</td>
                 <td>
-                  <button class="btn btn-danger" onclick="deleteBook(${i})">Delete</button>
-                  <button class="btn btn-secondary" onclick="getBook(${i})">Update</button>
+                  <button class="btn delete" onclick="deleteBook(${i})">Delete</button>
+                  <button class="btn update" onclick="getBook(${i})">Update</button>
                 </td>
               </tr>`;
     }
