@@ -1,5 +1,5 @@
 let xhttp = new XMLHttpRequest();
-xhttp.open('GET', 'https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=fefdcf3b720b43a3acc7a54ab7da2b18');
+xhttp.open('GET', 'https://newsapi.org/v2/everything?domains=wsj.com&apiKey=fefdcf3b720b43a3acc7a54ab7da2b18');
 xhttp.send();
 let allData = [];
 let container = document.getElementById('cont');
